@@ -18,7 +18,7 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     if request.method == 'POST':
-        fixed_acidity=float(request.form['fixed_acidity'  ])
+        fixed_acidity=float(request.form['fixed_acidity'])
         volatile_acidity=float(request.form['volatile_acidity'])
         citric_acid=float(request.form['citric_acid'])
         residual_sugar=float(request.form['residual_sugar'])
